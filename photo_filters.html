@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		img {
+			width: 1000px;
+			height: 1000px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function submit() {
+			var url = document.getElementById("imageurl").value
+			var image = document.createElement("img")
+			image.setAttribute("src", url)
+			image.setAttribute("id", "photo")
+			var photosContainer = document.getElementById("photos")
+			photosContainer.appendChild(image)
+		}
+		function changeBlur() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("blurSlider").value
+			photo.style.filter = "blur(" + blurVal + "px)"
+		}
+		function changeBrightness() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("brightnessSlider").value
+			photo.style.filter = "brightness(" + blurVal + "%)"
+		}
+		function changeContrast() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("contrastSlider").value
+			photo.style.filter = "contrast(" + blurVal + "%)"
+		}
+		function changeGrayscale() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("grayscaleSlider").value
+			photo.style.filter = "grayscale(" + blurVal + "%)"
+		}
+		function changeInvert() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("invertSlider").value
+			photo.style.filter = "invert(" + blurVal + "%)"
+		}
+		function changeOpacity() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("opacitySlider").value
+			photo.style.filter = "opacity(" + blurVal + "%)"
+		}
+		function changeSature() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("satureSlider").value
+			photo.style.filter = "saturate(" + blurVal + "%)"
+		}
+		function changeSepia() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("sepiaSlider").value
+			photo.style.filter = "sepia(" + blurVal + "%)"
+		}
+		function changeHueRotation() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("hueSlider").value
+			photo.style.filter = "hue-rotate(" + blurVal + "deg)"
+		}	
+	</script>
+	<h1> filter your photo </h1>
+	<input type="text" id="imageurl">
+	<button onclick="submit()">submit</button><br>
+	blur<input id="blurSlider" type ="range" min="0" max="10" value="0" oninput="changeBlur()"> <br> 
+	brightness<input id="brightnessSlider" type ="range" min="0" max="100" value="0" oninput="changeBrightness()"><br> 
+	contrast <input id="contrastSlider" type ="range" min="0" max="100" value="0" oninput="changeContrast()"><br>
+	grayscale <input id="grayscaleSlider" type ="range" min="0" max="100" value="0" oninput="changeGrayscale()"><br>
+	invert <input id="invertSlider" type ="range" min="0" max="100" value="0" oninput="changeInvert()"><br>
+	opacity <input id="opacitySlider" type ="range" min="0" max="100" value="0" oninput="changeOpacity()"><br>
+	sature <input id="satureSlider" type ="range" min="0" max="100" value="0" oninput="changeSature()"><br>
+	sepia <input id="sepiaSlider" type ="range" min="0" max="100" value="0" oninput="changeSepia()"><br>
+	hue rotation <input id="hueSlider" type ="range" min="0" max="360" value="0" oninput="changeHueRotation()"><br>
+	<div id="photos">
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<doctype html>
+<head>
+<style type="text/css">
+.acorn {
+	width:50px;
+	height:50px;
+	display:inline-block;
+	margin:6px;
+}
+img {
+	width: 40px;
+	height:40px;
+	margin:6px;
+}	
+
+</style>
+</head>
+
+<body>
+<h1>is it too hot for your squirrel to be outside</h1>
+type in the temperature
+<input id="temp">	
+</input>
+<button id="button" onclick="getTemp()">
+submit 
+</button>
+<div id="output"></div>
+<button id="new-box" onclick ="addSquirrel()">
+click to add a new squirrel
+</button>
+<div id="squirrel-container"></div>
+<script type="text/javascript">
+function getTemp() {
+	var input = document.getElementById("temp").value
+	var output = ""
+	if(input < 90) {
+		output = "your squirrel is safe from the evil sun"
+	}
+	else if(input < 120){
+		output = "save your squirrels its tooooooo hot"
+	}
+	else {
+		output = "pray to mother squirrel because global warming is happenin <br> <img src=praying.jpg>"
+	}
+	document.getElementById("output").innerHTML = output
+}
+
+function addSquirrel() {
+var squirrels = document.getElementById("squirrel-container")
+//var element = document.createElement("div")
+var element = document.createElement("img")
+//element.setAttribute("class", "acorn")
+element.setAttribute("src", "squirrel pic.jpg")
+var r = Math.floor(Math.random()*256)
+var g = Math.floor(Math.random()*256)
+var b = Math.floor(Math.random()*256)
+element.style.borderColor = "rgb(" + r.toString() + "," + g.toString() + "," + b.toString() + ")";
+element.style.borderWidth = "5px"
+element.style.borderStyle = "solid"
+//element.innerHTML = "<img src='squirrel pic.jpg' width=40>"
+squirrels.appendChild(element)
+}
+</script>
+</body>
+
+
+
+
+
+</html>

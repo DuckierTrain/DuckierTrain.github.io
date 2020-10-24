@@ -1,0 +1,128 @@
+		body{
+			background-color: white;
+      font-size:30px;
+      font-family:'Roboto Slab', serif;
+    }
+
+    img {
+      width:100px;
+      height:100px;
+    }
+    a {
+text-decoration: none;
+}
+
+
+		/* Style the tab */
+.nav {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  /*position:fixed; */
+  padding:10px;
+  width: 100%;
+  
+}
+
+/* Style the buttons that are used to open the tab content */
+.nav a {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.nav a:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.nav a.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.navcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.container {
+  width: 80%;
+  /*border: 1px solid black;
+  border-radius: 10px; */
+  padding-top: 100px; 
+}
+
+.image-container {
+        position: relative;
+        margin: 25px;
+        display: inline-block;
+      }
+
+      .caption {
+        font-size: 48px;
+        color: #FFF;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+      }
+
+ .minecraft-videos {
+  background-color: #0d48a1;
+  padding-top: 9px;
+ }
+
+ .fortnite-videos {
+  background-color:red;
+  padding-top: 9px; 
+ }
+
+ .cr-and-br-videos {
+  background-color: red;
+  padding-top:9px;
+ }
+
+ .about-my-chanel {
+  background-color: green;
+  padding-left: 300px;
+ }
+
+ .updates {
+  background-color: #46b2e8;
+  padding-left: 300px;
+ }
+
+ .sidebar {
+  position: fixed;
+  height: 100%;
+  /*background: #34eb40;*/
+  padding: 0px 0px 0px 0px;
+  width: 200px;
+
+
+}
+
+.sidebar-item {
+  padding: 0px 50px 8px 0px;
+  cursor: pointer;
+}
+
+/*.sidebar-item:hover {
+  background-color: red;
+  color: black;
+}
+
+.sidebar-selected {
+  background-color: yellow;
+  color: black; */
+  .myPic {
+    padding-top: 20px;
+  }
+
+
