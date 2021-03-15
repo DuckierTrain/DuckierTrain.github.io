@@ -24,6 +24,7 @@ text-decoration: none;
   
 }
 
+
 /* Style the buttons that are used to open the tab content */
 .nav a {
   background-color: inherit;
@@ -123,6 +124,10 @@ text-decoration: none;
   color: black; */
   .myPic {
     padding-top: 20px;
+  }
+  .memes {
+    height: 500px;
+    width: 500px;
   }
 
 
